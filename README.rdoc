@@ -39,6 +39,11 @@ basic shoulda syntax. A simple example says it all.
   end
 
 
+= Install
+
+  $ gem install mini_shoulda
+
+
 = What About ActiveRecord Macros
 
 It is not my goal to implement all the ActiveRecord macros nor things like should_have_db_columns :)
