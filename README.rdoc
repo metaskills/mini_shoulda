@@ -51,4 +51,4 @@ just a series of aliases to those methods. Our only monkey patch is in MiniTest'
 so you can maintain class scope in your own test cases. Please help me lobby the MiniTest team to get 
 that patch in.
 
-  * https://github.com/seattlerb/minitest/pull/9
+* https://github.com/seattlerb/minitest/pull/9
