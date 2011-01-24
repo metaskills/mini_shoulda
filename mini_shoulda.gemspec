@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.rubygems_version = '1.3.7'
   s.name = 'mini_shoulda'
-  s.summary = 'MiniShoulda - A minimal shoulda/context DSL built on top of MiniTest::Spec.'
-  s.description = 'MiniShoulda - A minimal shoulda/context DSL built on top of MiniTest::Spec.'
+  s.summary = 'MiniShoulda - A minimal shoulda DSL built on top of MiniTest::Spec.'
+  s.description = 'MiniShoulda - A minimal shoulda DSL built on top of MiniTest::Spec.'
   s.homepage = 'http://github.com/metaskills/mini_shoulda'
   s.rdoc_options = ['--charset=UTF-8']
   s.version = '0.1.0'

@@ -1,6 +1,54 @@
 
 = MiniShoulda
 
-A minimal shoulda/context DSL built on top of MiniTest::Spec.
+A minimal shoulda DSL built on top of MiniTest::Spec. MiniTest is the future, and we should all be 
+using it! No pun. The MiniShoulda gem is a simple set of alias built on top of MiniTest so that we can use 
+basic shoulda syntax. A simple example says it all.
+
+  class MyTestClass < MiniTest::Spec
+
+    setup do
+      @object = Object.new
+    end
+
+    teardown do
+      @object.freeze
+    end
+
+    should 'find object' do
+      assert @object
+      refute_instance_of Object, @object
+    end
+
+    should_eventually 'works too' do
+      refute true, 'will use skip and not run'
+    end
+
+    context 'with another context' do
+
+      setup do
+        @object = [1,2,3]
+      end
+
+      should 'just work' do
+        assert_includes @object, 2
+      end
+
+    end
+
+  end
 
 
+= What About ActiveRecord Macros
+
+It is not my goal to implement all the ActiveRecord macros nor things like should_have_db_columns :)
+
+
+= Any Hacks?
+
+Not really. MiniShoulda is built on top of the existing MiniTest::Spec methods. Basically they are 
+just a series of aliases to those methods. Our only monkey patch is in MiniTest's Kernel#describe method 
+so you can maintain class scope in your own test cases. Please help me lobby the MiniTest team to get 
+that patch in.
+
+  * https://github.com/seattlerb/minitest/pull/9
