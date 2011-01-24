@@ -1,18 +1,14 @@
-module MiniShoulda
-  module SpecAdditions
-    
-    def should(desc)
-      it("should #{desc}") { yield }
-    end
-
-    # Maybe use skip
-    def should_eventually(desc)
-      it "should eventually #{desc}"
-    end
-    
-    
+class MiniTest::Spec < MiniTest::Unit::TestCase
+  
+  class << self
+    alias :setup :before
+    alias :teardown :after
+    alias :should :it
+    alias :context :describe
   end
+  
+  def self.should_eventually(desc)
+    it("should eventually #{desc}") { skip("Should eventually #{desc}") }
+  end
+  
 end
-
-MiniTest::Spec.extend MiniShoulda::SpecAdditions
-

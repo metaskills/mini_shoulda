@@ -1,4 +1,3 @@
-
 # I currently have a patch submitted to minitest to allow parent classes to maintain their 
 # inhertance chain when describe blocks are used. Please help me get it into core!
 # https://github.com/seattlerb/minitest/pull/9
