@@ -1,4 +1,3 @@
-require 'ruby-debug'; Debugger.start
 class MiniTest::Spec < MiniTest::Unit::TestCase
   
   class << self
