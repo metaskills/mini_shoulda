@@ -6,6 +6,6 @@ require 'mini_shoulda/spec'
 #
 # A minimal shoulda DSL built on top of MiniTest::Spec.
 module MiniShoulda
-  VERSION = '0.1.0'
+  
 end
 
