@@ -1,6 +1,11 @@
+require 'ruby-debug'; Debugger.start
 class MiniTest::Spec < MiniTest::Unit::TestCase
   
   class << self
+    unless defined? Rails
+      alias :setup :before
+      alias :teardown :after
+    end
     alias :should :it
     alias :context :describe
   end
