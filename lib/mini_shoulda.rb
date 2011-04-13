@@ -1,5 +1,4 @@
 require 'minitest/spec'
-require 'mini_shoulda/minitest_describe_patch'
 require 'mini_shoulda/spec'
 
 # = MiniShoulda

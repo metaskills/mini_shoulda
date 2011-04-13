@@ -1,8 +1,5 @@
 require 'test_helper'
 
-# TODO: This test should disappear when we no longer have to patch MiniTest's
-# Kernel#describe block using our 'mini_shoulda/minitest_describe_patch' file.
-
 class ScopeTest < MiniShoulda::SpecCase
   
   should 'use base instance helpers' do
@@ -27,5 +24,18 @@ class ScopeTest < MiniShoulda::SpecCase
 
   end
   
+  
+end
+
+class DuppedScopeTest < MiniTest::Spec
+  
+  context('Context A') { }
+  
+  context('Context B') { }
+  
+  should 'only show this failure once' do
+    flunk "Passed if you only see this once!!!\n" +
+          "test_0001_only_show_this_failure_once(DuppedScopeTest)"
+  end
   
 end
