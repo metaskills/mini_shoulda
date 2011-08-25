@@ -1,6 +1,6 @@
 
 source :rubygems
+gemspec
 
 gem 'rake'
-gem 'minitest', '~> 2.1.0'
 

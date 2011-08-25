@@ -1,4 +1,8 @@
 
+* 0.4.0 Allow versions of MiniTest higher than 2.1.0.
+
+* 0.3.0 Context scopes do not make duplicate scopes.
+
 * 0.2.0 Rails compatibility.
 
 * 0.1.0 Initial release!
