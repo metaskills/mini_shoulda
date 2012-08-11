@@ -33,9 +33,4 @@ class DuppedScopeTest < MiniTest::Spec
   
   context('Context B') { }
   
-  should 'only show this failure once' do
-    flunk "Passed if you only see this once!!!\n" +
-          "test_0001_only_show_this_failure_once(DuppedScopeTest)"
-  end
-  
 end

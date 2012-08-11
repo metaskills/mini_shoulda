@@ -1,4 +1,8 @@
 
+* 0.4.0 Remove passing/failing test. Fixes #3.
+
+* 0.3.0 ???
+
 * 0.2.0 Rails compatibility.
 
 * 0.1.0 Initial release!
