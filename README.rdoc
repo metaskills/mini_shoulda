@@ -1,4 +1,14 @@
 
+
+= Deprecated
+
+== Please use the minitest-spec-rails gem and enable mini_shoulda
+
+* https://github.com/metaskills/minitest-spec-rails
+* https://github.com/metaskills/minitest-spec-rails#mini_shoulda
+
+
+
 = MiniShoulda
 
 A minimal shoulda DSL built on top of MiniTest::Spec. MiniTest is the future, and we should all be 
